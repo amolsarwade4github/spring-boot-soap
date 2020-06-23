@@ -1,4 +1,4 @@
-package com.demo.service;
+package com.demo.springbootsoapexample.service;
 
 import com.demo.spring_boot_soap_example.User;
 import org.springframework.stereotype.Service;

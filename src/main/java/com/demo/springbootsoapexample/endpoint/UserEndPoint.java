@@ -1,6 +1,6 @@
-package com.demo.endpoint;
+package com.demo.springbootsoapexample.endpoint;
 
-import com.demo.service.UserService;
+import com.demo.springbootsoapexample.service.UserService;
 import com.demo.spring_boot_soap_example.GetUserRequest;
 import com.demo.spring_boot_soap_example.GetUserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
