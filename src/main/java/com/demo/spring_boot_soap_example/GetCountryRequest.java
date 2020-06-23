@@ -11,22 +11,21 @@ package com.demo.spring_boot_soap_example;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for user complex type.
+ * <p>Java class for anonymous complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="user">
+ * &lt;complexType>
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="empId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="salary" type="{http://www.w3.org/2001/XMLSchema}double"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,17 +35,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "user", propOrder = {
-    "name",
-    "empId",
-    "salary"
+@XmlType(name = "", propOrder = {
+    "name"
 })
-public class User {
+@XmlRootElement(name = "getCountryRequest")
+public class GetCountryRequest {
 
     @XmlElement(required = true)
     protected String name;
-    protected int empId;
-    protected double salary;
 
     /**
      * Gets the value of the name property.
@@ -70,38 +66,6 @@ public class User {
      */
     public void setName(String value) {
         this.name = value;
-    }
-
-    /**
-     * Gets the value of the empId property.
-     * 
-     */
-    public int getEmpId() {
-        return empId;
-    }
-
-    /**
-     * Sets the value of the empId property.
-     * 
-     */
-    public void setEmpId(int value) {
-        this.empId = value;
-    }
-
-    /**
-     * Gets the value of the salary property.
-     * 
-     */
-    public double getSalary() {
-        return salary;
-    }
-
-    /**
-     * Sets the value of the salary property.
-     * 
-     */
-    public void setSalary(double value) {
-        this.salary = value;
     }
 
 }

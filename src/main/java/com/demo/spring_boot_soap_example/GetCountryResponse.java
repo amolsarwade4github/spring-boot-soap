@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="user" type="{http://demo.com/spring-boot-soap-example}user"/>
+ *         &lt;element name="country" type="{http://demo.com/spring-boot-soap-example}country"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "user"
+    "country"
 })
-@XmlRootElement(name = "getUserResponse")
-public class GetUserResponse {
+@XmlRootElement(name = "getCountryResponse")
+public class GetCountryResponse {
 
     @XmlElement(required = true)
-    protected User user;
+    protected Country country;
 
     /**
-     * Gets the value of the user property.
+     * Gets the value of the country property.
      * 
      * @return
      *     possible object is
-     *     {@link User }
+     *     {@link Country }
      *     
      */
-    public User getUser() {
-        return user;
+    public Country getCountry() {
+        return country;
     }
 
     /**
-     * Sets the value of the user property.
+     * Sets the value of the country property.
      * 
      * @param value
      *     allowed object is
-     *     {@link User }
+     *     {@link Country }
      *     
      */
-    public void setUser(User value) {
-        this.user = value;
+    public void setCountry(Country value) {
+        this.country = value;
     }
 
 }
